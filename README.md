@@ -131,5 +131,7 @@ A programação dinâmica é uma técnica fundamental na ciência da computaçã
   - Uma comparação entre algoritmo guloso e o algoritmo de programação dinâmica
 - [A Sequência de Fibonacci](https://deverdecasaalumnus.wordpress.com/2020/09/04/sequencia-fibonacci/)
   - Explicação sobre a Sequência de Fibonacci
+- [Sequência de Fibonacci em Python](https://www.youtube.com/watch?v=CPm9jyw5zKk)
+  - Video no youtube sobre Sequência de Fibonacci em Python
 - [Caminhos Mínimos Ponderados em DAGs e em Grafos Gerais](https://www.youtube.com/watch?v=VlqfMJDit20)
   - Video no youtube sobre Caminhos Mínimos em DAGs
