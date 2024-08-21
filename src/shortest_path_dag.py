@@ -23,15 +23,22 @@ def topological_sort(graph):
     return order
 
 def shortest_path_dag(graph, start):
+    # 1. Obtém a ordenação topológica do grafo
     order = topological_sort(graph)
+
+    # 2. Inicializa as distâncias de todos os vértices como infinito
     dist = {v: float("inf") for v in graph}
     dist[start] = 0
-    
+
+    # 3. Processa os vértices na ordem topológica
     for u in order:
         for v in graph[u]:
+            # 4. Relaxa a aresta (u, v)
+            print(f"dist[v] {dist[v]} > dist[u] {dist[u]} + graph[u][v] = {graph[u][v]}")
             if dist[v] > dist[u] + graph[u][v]:
                 dist[v] = dist[u] + graph[u][v]
-                
+
+    # 5. Retorna as distâncias calculadas            
     return dist
 
 start_vertex = "A"
