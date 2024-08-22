@@ -2,7 +2,7 @@
 ## Introdução  
 
 **Programação Dinâmica (PD)** é tanto uma técnica de otimização matemática como um paradigma algorítmico, em ambos os contextos referindo-se ao ato de simplificar problemas complexos dividindo-os em subproblemas de uma maneira recursiva.
-Ela é utilizada amplamente em diversos campos como ciência da computação, pesquisa operacional, e economia. A técnica foi introduzida por Richard Bellman na década de 1950, com o objetivo de abordar problemas que podiam ser decompostos em subproblemas menores e mais simples de resolver.
+Ela é utilizada amplamente em diversos campos como ciência da computação, pesquisa operacional, e economia. A técnica foi introduzida por Richard Bellman, com o objetivo de abordar problemas que podiam ser decompostos em subproblemas menores e mais simples de resolver.
 A palavra "dinâmica" refere-se à natureza do problema que se desenvolve ao longo do tempo, enquanto "programação" é usada no sentido matemático de planejamento ou tomada de decisão. 
 Essa técnica tem se mostrado incrivelmente útil em uma variedade de contextos onde a eficiência e a otimização são cruciais.
 
