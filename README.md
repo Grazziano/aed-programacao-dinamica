@@ -1,19 +1,26 @@
 # Programação Dinâmica: Memoization e Caminhos mais curtos em DAGs
 ## Introdução  
 
-**Programação Dinâmica (PD)** é uma técnica essencial na resolução de problemas de otimização, utilizada amplamente em diversos campos como ciência da computação, pesquisa operacional, e economia. A técnica foi introduzida por Richard Bellman na década de 1950, com o objetivo de abordar problemas que podiam ser decompostos em subproblemas menores e mais simples de resolver.
-
-A palavra "dinâmica" refere-se à natureza do problema que se desenvolve ao longo do tempo, enquanto "programação" é usada no sentido matemático de planejamento ou tomada de decisão. Essa técnica tem se mostrado incrivelmente útil em uma variedade de contextos onde a eficiência e a otimização são cruciais.
+**Programação Dinâmica (PD)** é tanto uma técnica de otimização matemática como um paradigma algorítmico, em ambos os contextos referindo-se ao ato de simplificar problemas complexos dividindo-os em subproblemas de uma maneira recursiva.
+Ela é utilizada amplamente em diversos campos como ciência da computação, pesquisa operacional, e economia. A técnica foi introduzida por Richard Bellman na década de 1950, com o objetivo de abordar problemas que podiam ser decompostos em subproblemas menores e mais simples de resolver.
+A palavra "dinâmica" refere-se à natureza do problema que se desenvolve ao longo do tempo, enquanto "programação" é usada no sentido matemático de planejamento ou tomada de decisão. 
+Essa técnica tem se mostrado incrivelmente útil em uma variedade de contextos onde a eficiência e a otimização são cruciais.
 
 ## História
-A palavra "programação dinâmica" eh termo um tanto elusivo. Por que programação dinâmica? O que difere essa classe de design de algoritmos para o caracteriza-lo como dinâmico?
-Bom, a historia por traz de como esse nome foi cunhado eh um tanto inusitada. O termo foi adotado pelo matemático Richard Bellman, nos anos 40. Na época, ele estava conduzindo uma pesquisa em processos de decisão multi-estagio, dentro de uma instituição da forca aérea. Wilson, um cavalheiro supervisionando o projeto, que também era o secretario de devesa, tinha uma aversão patológica a palavra "pesquisa" e "matemática", tal que simplesmente mencionar esses termos deixava esse senhor vermelho, ao ponto de ficar violento.
+A palavra "programação dinâmica" eh termo um tanto elusivo. Por que programação dinâmica? O que difere essa classe de design de algoritmos para o caracteriza-lo como "dinâmico"?
+Bom, a historia por traz de como esse nome foi cunhado é um tanto inusitada. O termo foi adotado pelo matemático Richard Bellman, nos anos 40. Na época, ele estava conduzindo uma pesquisa em processos de decisão multi-estagio, dentro de uma instituição chamada RAND. Wilson, um cavalheiro supervisionando o projeto, que também era o secretario de defesa, tinha uma aversão patológica a palavra "pesquisa" e "matemática", tal que simplesmente mencionar esses termos deixava esse senhor vermelho, ao ponto de ficar violento.
 Por esse motivo, Bellman teve que pensar bastante em um termo apropriado, que uma vez que irritar o comandante da operação seria um problema para ele seguir seus projetos. Primeiramente ele pensou em planejamento, ou tomada de decisões. Mas ambos esses termos eram muito abrangentes, e não passavam a ideia que ele estava buscando. Desse modo, "programação" foi adotada como primeira parte. 
 Como a pesquisa que ele estava conduzindo envolvia algo que variava com o tempo, e era multi-estado, "dinâmico" ficou sendo a segunda parte. Mais do que isso, segundo Bellman, não ha como associar algo negativo a palavra dinâmico. Eh genérico o suficiente para descrever o que ele estava fazendo, e ao mesmo tempo, soava legal.
 
-## Comparação com Outros Métodos de Design de Algoritmos
+## Conceitos
+A programação dinâmica é um paradigma de design de algoritmos.
+Ela pode ser considerada como um método de "força bruta cuidadosa". 
+Embora a aparente contradição do termo, PD consiste basicamente de uma busca exaustiva no espaço de soluções, porem essa busca faz uso de alguns mecanismos inteligentes, que otimizam sua performance.
+Sua abordagem é tipicamente dividida em 2 etapas:
+1. Reformular o problema de modo recursivo
+2. Armazenar resultados parciais e reutiliza-los (Memoization)
 
-A programação dinâmica é uma das várias abordagens para o design de algoritmos. Para entender sua relevância, é interessante compará-la com outros métodos, como os **algoritmos gulosos**.
+Para entender sua relevância, é interessante compará-la com outros métodos, como os **algoritmos gulosos**.
 
 ### Algoritmos Gulosos
 
