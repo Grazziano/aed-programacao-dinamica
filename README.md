@@ -1,4 +1,5 @@
-# Introdução à Programação Dinâmica: História, Conceitos e Aplicações
+# Programação Dinâmica: Memoization e Caminhos mais curtos em DAGs
+## Introdução  
 
 **Programação Dinâmica (PD)** é uma técnica essencial na resolução de problemas de otimização, utilizada amplamente em diversos campos como ciência da computação, pesquisa operacional, e economia. A técnica foi introduzida por Richard Bellman na década de 1950, com o objetivo de abordar problemas que podiam ser decompostos em subproblemas menores e mais simples de resolver.
 
